@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <!--
+    GREGORIO HONORATO
+    PROGRAMA DESENVOLVIDO PARA DEXTRA
+    -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}" />
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+
+    <title>RESULTADO - SUPER LANCHONETE DEXTRA</title>
+  </head>
+
+  <body>
+    <div id="resultado">
+      {{total}}<br/>
+      <!-- MUDE ESSE HREF PARA VOLTAR NA PAGINA LOCAL EM CASO DE ACESSO EXTERNO -->
+      <a class="voltar" href="http://localhost:5000/"> VOLTAR </a>
+    </div>
+  </body>
+</html>
